@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JP North Mira Road</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo/favicon.jpg" sizes="16x16" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Fancy Box CDN -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <!-- EmailJS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/mail.js"></script>
+
+    <!-- Custom CSS & JS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#main-navbar"
+    data-bs-root-margin="0px 0px -50%"
+    data-bs-smooth-scroll="true"
+    class="scrollspy"
+    tabindex="0"
+    data-offset="1">
+    <header class="fixed-top shadow-sm">
+      <nav
+        class="navbar navbar-expand-lg mx-auto"
+        style="background-color: #ffffff"
+        id="main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/logo/logo.svg"
+              alt="Logo"
+              height="50px"
+              style="padding-left: 100%" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#slider_section">
+                  <i class="fa-solid fa-house nav-icon"></i>
+                  <span class="d-sm-inline"> Home </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#overview_section">
+                  <i class="fa-solid fa-coins nav-icon"></i>
+                  <span class="d-sm-inline"> Overview </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery_section">
+                  <i class="fa-solid fa-images nav-icon"></i>
+                  <span class="d-sm-inline"> Gallery </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing_section">
+                  <i class="fa-solid fa-sliders nav-icon"></i>
+                  <span class="d-sm-inline"> Pricing </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities_section">
+                  <i class="fa-solid fa-wifi nav-icon"></i>
+                  <span class="d-sm-inline"> Amenities </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#location_section">
+                  <i class="fa-solid fa-map-location nav-icon"></i>
+                  <span class="d-sm-inline"> Location </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_section">
+                  <i class="fa-solid fa-user nav-icon"></i>
+                  <span class="d-sm-inline"> About Us </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Slider Section -->
+      <section id="slider_section">
+        <!-- Desktop Slider -->
+        <div
+          id="carousel-Indicators"
+          class="carousel slide desktop-slider"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100 banner1"
+                width="100%"
+                src="img/banners/desktop_banner.jpg"
+                alt="Banner1" />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 banner2"
+                width="100%"
+                src="img/banners/desktop_banner2.jpg"
+                alt="Banner2" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Overview Section  -->
+      <section id="overview_section" class="container p-4 mt-3">
+        <h2 class="section-heading text-center text-uppercase">SOBHA ORBIS</h2>
+
+        <div class="mt-4 text-center">
+          <p class="overview-para mt-3">
+            Discover SOBHA ORBIS with its thoughtfully designed apartments in
+            1-2 bedroom configurations. The complex is being developed by Sobha
+            Realty and is situated in Motor City, famous for the Dubai
+            Autodrome. Sobha Realty Redefines The Concept Of Luxury Residential
+            Living With A Repertoire Of Real Estate Projects Across Dubai.
+            Pioneering The 'Backward Integration' Model In Real Estate, Sobha
+            Realty Employs In-House Mastery To Create A Unique Offering Of Fine
+            Living That Extends Beyond Customer's Expectations.
+            <br /><br />
+            <span class="overview_p2">
+              SOBHA ORBIS is a premium 3-tower complex by Sobha Realty in the
+              coveted area of Motor City. It houses a collection of 1-2 bedroom
+              apartments, including 1.5-bedroom configurations, ranging from 545
+              sq.ft. to 988 sq.ft. Investors also have the option to purchase a
+              full floor in the Sobha Orbis complex. Key features of the layouts
+              include a utility room, a storage room, a powder room and a
+              balcony. Please note that 1.5-bedroom apartments come with an
+              office/study, a major benefit considering the ongoing trend of
+              working and studying remotely. The complex offers its occupants an
+              array of unrivalled leisure amenities, including a resort-style
+              pool, landscaped gardens, a fitness centre and more.
+            </span>
+          </p>
+          <button
+            class="btn btn-outline-dark download_btn text-center"
+            data-bs-toggle="modal"
+            data-bs-target="#popupModal">
+            <i class="fa-solid fa-download nav-icon"></i> Download Brochure
+          </button>
+        </div>
+      </section>
+
+      <!-- Configuration Section -->
+      <section id="configuration_section" class="container p-4 mt-3">
+        <h2 class="section-heading">Configuration</h2>
+
+        <div class="location_features_section m-3">
+          <div>
+            <!-- Nav Links Confi -->
+            <ul class="nav nav-pills mb-3" id="pills-tabloc" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase ami-tab active"
+                  id="pills-loc-0"
+                  data-bs-toggle="pill"
+                  data-bs-target="#loc-0"
+                  role="tab"
+                  aria-controls="loc-0"
+                  aria-selected="true">
+                  1 Bedroom
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase ami-tab"
+                  id="pills-loc-1"
+                  data-bs-toggle="pill"
+                  data-bs-target="#loc-1"
+                  role="tab"
+                  aria-controls="loc-1"
+                  aria-selected="false">
+                  1.5 Bedroom
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase ami-tab"
+                  id="pills-loc-2"
+                  data-bs-toggle="pill"
+                  data-bs-target="#loc-2"
+                  role="tab"
+                  aria-controls="loc-2"
+                  aria-selected="false">
+                  2 Bedroom
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Features Tab Content -->
+          <div class="tab-content" id="pills-tablocContent">
+            <div
+              class="tab-pane fade show active"
+              id="loc-0"
+              role="tabpanel"
+              aria-labelledby="pills-loc-0"
+              tabindex="0">
+              <!-- 1 BHK  -->
+              <div class="container plans_cont card">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <img
+                      class="img-fluid floor-plan"
+                      src="img/plans/1br_547sqft.jpg"
+                      alt="" />
+                  </div>
+                  <div class="col-12 col-md-6 mt-5 floor-plan-details">
+                    <h3>1 Bedroom Apartments</h3>
+                    <p>
+                      <img
+                        class="total"
+                        src="img/extras/total.svg"
+                        alt=""
+                        height="28px" />
+                      <b>Total: </b> 547sqft
+                    </p>
+                    <p>
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-download nav-icon"></i> Download
+                        Brochure
+                      </button>
+                      <br />
+                      <br />
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-folder-open nav-icon"></i> Open
+                        All Floor Plans
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="loc-1"
+              role="tabpanel"
+              aria-labelledby="pills-loc-1"
+              tabindex="1">
+              <!-- 1.5 BHK  -->
+              <div class="container plans_cont card">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <img
+                      class="img-fluid floor-plan"
+                      src="img/plans/1_5br_697sqft.jpg"
+                      alt="" />
+                  </div>
+                  <div class="col-12 col-md-6 mt-5 floor-plan-details">
+                    <h3>1.5 Bedroom Apartments</h3>
+                    <p>
+                      <img
+                        class="total"
+                        src="img/extras/total.svg"
+                        alt=""
+                        height="28px" />
+                      <b>Total: </b> 697sqft
+                    </p>
+                    <p>
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-download nav-icon"></i> Download
+                        Brochure
+                      </button>
+                      <br />
+                      <br />
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-folder-open nav-icon"></i> Open
+                        All Floor Plans
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="loc-2"
+              role="tabpanel"
+              aria-labelledby="pills-loc-2"
+              tabindex="2">
+              <!-- 1.5 BHK  -->
+              <div class="container plans_cont card">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <img
+                      class="img-fluid floor-plan"
+                      src="img/plans/2br_988sqft.jpg"
+                      alt="" />
+                  </div>
+                  <div class="col-12 col-md-6 mt-5 floor-plan-details">
+                    <h3>2 Bedroom Apartments</h3>
+                    <p>
+                      <img
+                        class="total"
+                        src="img/extras/total.svg"
+                        alt=""
+                        height="28px" />
+                      <b>Total: </b> 988sqft
+                    </p>
+                    <p>
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-download nav-icon"></i> Download
+                        Brochure
+                      </button>
+                      <br />
+                      <br />
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-folder-open nav-icon"></i> Open
+                        All Floor Plans
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
