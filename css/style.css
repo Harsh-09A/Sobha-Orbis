@@ -127,10 +127,10 @@ html {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner.jpg");
+    content: url("../img/banners/mobile_banner2.jpg");
   }
   .carousel-item .banner2 {
-    content: url("../img/banners/mobile_banner.jpg");
+    content: url("../img/banners/mobile_banner2.jpg");
   }
 }
 
@@ -245,6 +245,12 @@ html {
   transform-style: preserve-3d;
   border-radius: 12px;
   /* Rounded corners */
+}
+@media screen and (max-width: 600px) {
+  #gallery_slider {
+    width: 65%;
+    height: 200px;
+  }
 }
 
 /* Radio buttons for slide control */
