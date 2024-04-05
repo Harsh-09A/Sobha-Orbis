@@ -174,3 +174,299 @@ html {
   padding: 20px;
   font-size: 1.2em;
 }
+/* ___ */
+
+/* amenities */
+
+.thumbnails {
+  /* width: calc(100% / 3); */
+  height: 250px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.thumbnails img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: 50% 20%; */
+  border-radius: 5%;
+}
+
+.black {
+  text-align: center;
+  background: #000;
+  background-blend-mode: multiply;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.7;
+  border-radius: 5%;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.5em;
+  align-self: center;
+  position: absolute;
+  z-index: 10;
+  text-transform: uppercase;
+}
+
+.black,
+.title {
+  transition: opacity 0.3s;
+}
+
+.thumbnails:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  z-index: 20;
+}
+
+.thumbnails:hover .black,
+.thumbnails:hover .title {
+  opacity: 0;
+}
+
+/* gallery */
+
+#gallery_slider {
+  position: relative;
+  width: 50%;
+  height: 32vw;
+  margin: 30px auto;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+  /* Rounded corners */
+}
+
+/* Radio buttons for slide control */
+input[type="radio"] {
+  position: relative;
+  top: 108%;
+  left: 50%;
+  width: 20px;
+  /* Slightly larger */
+  height: 20px;
+  /* Slightly larger */
+  margin: 0 15px 0 0;
+  background: #ccc;
+  /* Light gray */
+  border: 2px solid #ccc;
+  /* Light gray */
+  border-radius: 50%;
+  /* Rounded corners */
+  cursor: pointer;
+  transform: translateX(-83px);
+  transition: background 300ms ease, border 300ms ease;
+  /* Smooth transition */
+}
+
+input[type="radio"]:checked {
+  background: #ff5a5f;
+  /* Airbnb's coral red */
+  border: 2px solid #ff5a5f;
+  /* Airbnb's coral red */
+}
+
+/* Labels and images */
+#gallery_slider label,
+#gallery_slider label img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  /* Rounded corners */
+  transition: transform 400ms ease, opacity 400ms ease;
+  /* Added opacity transition */
+}
+
+/* New addition for Zoom Effect */
+.zoom-container {
+  overflow: hidden;
+  /* Hide the part of the image that extends outside the div */
+}
+
+/* Zoom effect */
+.zoom-container:hover {
+  cursor: default;
+  /* Change cursor to zoom-in icon */
+}
+
+.zoom-container.can-zoom:hover img {
+  transform: scale(1.4);
+  /* Zoom level */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Existing transition rules */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0%, 0, 0px);
+}
+
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(20%, 0, -100px);
+}
+
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(40%, 0, -250px);
+}
+
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(-40%, 0, -250px);
+}
+
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-20%, 0, -100px);
+}
+
+/* contact */
+
+/* contact */
+
+.contact_us {
+  color: #fff;
+}
+
+.right_conatct_social_icon {
+  background: var(--colorPrimary);
+}
+
+.contact_us {
+  background-color: #f1f1f1;
+  padding: 20px 0px;
+}
+
+@media screen and (min-width: 1000px) {
+  .contact_inner {
+    position: relative;
+  }
+
+  .contact_field {
+    padding: 60px 550px 90px 100px;
+  }
+
+  .contact_info_sec {
+    position: absolute;
+    width: 340px;
+    border-radius: 25px 0 0 25px;
+  }
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.contact_inner {
+  background-color: #fff;
+  /* position: relative; */
+  box-shadow: 20px 22px 44px #cccc;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  .contact_field {
+    padding: 10px;
+  }
+
+  .contact_info_sec {
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+    /* border-bottom: 10px solid white; */
+  }
+}
+
+/* .contact_field h3 {
+  color: #000;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 10px
+} */
+
+.contact_field p {
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+.contact_field .form-control {
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact_field .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-bottom: 2px solid #1325e8;
+}
+
+.contact_field .form-control::placeholder {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.contact_info_sec {
+  /* position: absolute; */
+  background-color: #2d2d2d;
+  right: 1px;
+  top: 18%;
+  height: 340px;
+
+  padding: 40px;
+}
+
+.contact_info_sec h4 {
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+
+.info_single {
+  margin: 30px 0px;
+}
+
+.info_single i {
+  margin-right: 15px;
+}
+
+.info_single span {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
