@@ -470,3 +470,59 @@ input[type="radio"]:checked {
   font-size: 14px;
   letter-spacing: 1px;
 }
+
+/*Location  */
+/* Location */
+
+.near-location {
+  padding-bottom: 25px;
+}
+.locations-left {
+  overflow-y: auto;
+  text-align: start;
+}
+.near-location h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.near-location ul {
+  /* padding-left: 0px; */
+  font-size: 14px;
+  /* font-weight: 200; */
+}
+
+.near-location ul li {
+  line-height: 1.8em;
+}
+.near-location img {
+  width: 50px;
+  height: 50px;
+}
+.nopadding {
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .locations-left {
+    margin-top: 2em;
+  }
+}
+.loc_img {
+  height: 400px;
+  width: 100%;
+}
+
+.loc_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.loc_features ul li {
+  padding: 10px;
+  font-size: 1.3em;
+  list-style: none;
+}
