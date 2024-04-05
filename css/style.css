@@ -410,16 +410,16 @@ input[type="radio"]:checked {
   }
 }
 
-/* .contact_field h3 {
-  color: #000;
+.contact_field h3 {
+  color: var(--colorBlack);
   font-size: 40px;
   letter-spacing: 1px;
   font-weight: 600;
-  margin-bottom: 10px
-} */
+  margin-bottom: 10px;
+}
 
 .contact_field p {
-  color: #000;
+  color: var(--colorBlack);
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -469,6 +469,24 @@ input[type="radio"]:checked {
 .info_single span {
   font-size: 14px;
   letter-spacing: 1px;
+}
+
+.submit-btn,
+.submit-btn:hover,
+.submit-btn:focus-visible,
+.submit-btn:active {
+  background-color: var(--colorSecondary) !important;
+  border: none !important;
+}
+
+.form-label {
+  display: none;
+}
+.inputStyle {
+  font-size: 1em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 /*Location  */
@@ -525,4 +543,103 @@ input[type="radio"]:checked {
   padding: 10px;
   font-size: 1.3em;
   list-style: none;
+}
+
+.read_more {
+  background-color: transparent;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 0;
+  width: fit-content;
+  padding-left: 10px;
+  color: var(--colorWhite);
+}
+
+/* Footer */
+#footer {
+  background-color: var(--colorBlack);
+  padding: 40px 20px;
+}
+
+/*  */
+@media screen and (min-width: 990px) {
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+}
+
+/* Action Footer */
+.action-footer-container {
+  margin: 0;
+  padding: 0;
+}
+.action-footer {
+  margin: 0;
+  padding: 7px;
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+  cursor: pointer;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  font-size: 0.8em;
+}
+
+.action-footer li {
+  border-left: 1px solid var(--colorBlack);
+}
+
+.action-footer li:first-child {
+  border-left: none !important;
+}
+/* For Desktop */
+@media only screen and (min-width: 990px) {
+  .action-footer {
+    display: none;
+  }
+}
+
+.form_norms {
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.download_btn {
+  color: var(--colorSecondary);
+  border-color: var(--colorSecondary);
+}
+.download_btn:hover,
+.download_btn:active {
+  border-color: var(--colorSecondary) !important;
+  background-color: var(--colorSecondary) !important;
+}
+
+/* ----------------------------------------------------------- */
+/* Thank You Page */
+
+#thanku_section {
+  margin-top: 5em !important;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thanku_section h2 {
+  font-family: MyCustomFont;
+  letter-spacing: 0.1em;
+  font-size: 5em;
+}
+
+#thanku_section p {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  #thanku_section h2 {
+    font-size: 2.3em;
+  }
+  #thanku_section p {
+    padding: 0 1.2em;
+    font-size: 0.8em;
+  }
 }
